@@ -14,37 +14,6 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles={
-'article-one':{
-    title:'Article One | Rozeen Zorzis',
-    heading: 'Article One',
-    date: 'Aug 29,2017',
-    content:`
-    <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article. 
-           </p>    
-           <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article. 
-           </p>
-           <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article. 
-           </p>`
-    
-},
-'article-two':{
-    title:'Article Two | Rozeen Zorzis',
-    heading: 'Article Two',
-    date: 'Aug 30,2017',
-    content:`
-    <p>This is the content of my second article.
-           </p>`
-},
-'article-three':{
-    title:'Article Three | Rozeen Zorzis',
-    heading: 'Article Three',
-    date: 'Aug 31,2017',
-    content:`
-    <p>This is the content of my third article.
-           </p>`
-},
-};
 function createTemplate(data){
         var title=data.title;
         var date=data.date;
