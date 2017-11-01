@@ -57,7 +57,7 @@ function createTemplate(data){
        return htmlTemplate;
 }
 
-app.get('/ui/reg', function (req, res) {
+app.get('/reg', function (req, res) {
   res.sendFile(path.join(__dirname,'ui' , 'reg.html'));
 });
 
