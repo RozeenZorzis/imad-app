@@ -57,13 +57,13 @@ function createTemplate(data){
        return htmlTemplate;
 }
 
-app.get('/reg', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'ui' , 'reg.html'));
 });
 
-app.get('/', function (req, res) {
-res.sendFile(path.join(__dirname,'ui' , 'index.html'));
-});
+//app.get('/', function (req, res) {
+//res.sendFile(path.join(__dirname,'ui' , 'index.html'));
+//});
 
 function hash(input,salt){
     //how do we get a hash
