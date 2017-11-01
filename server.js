@@ -61,6 +61,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'ui' , 'index.html'));
 });
 
+app.get('/ui/reg.html', function (req, res) {
+  res.sendFile(path.join(__dirname,'ui' , 'reg.html'));
+});
+
 function hash(input,salt){
     //how do we get a hash
    var hashed= crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
@@ -151,9 +155,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/reg.html', function (req, res) {
-  res.sendFile(path.join(__dirname,'ui' , 'reg.html'));
-});
+
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
