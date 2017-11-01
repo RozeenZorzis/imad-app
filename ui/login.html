@@ -1,1 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>E-Health Care</title>
+        <style type="text/css">
+ 
+            body {font-family:Arial, Sans-Serif;}
+ 
+            #container {width:850px; margin:0 auto;}
+ 
+            /* Nicely lines up the labels. */
+            form label {display:inline-block; width:140px;}
+ 
+            /* You could add a class to all the input boxes instead, if you like. That would be safer, and more backwards-compatible */
+            form input[type="text"],
+            form input[type="password"]
+            {width:160px;}
+ 
+            form .line {clear:both;}
+            form .line.submit {text-align:center;}
+ 			
+ 			.red{
+ 					color: red;
+ 			}
+ 			.button {
+                padding: 10px 24px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                border-radius: 12px;
+                background-color: white;
+                color: black;
+                border: 2px solid #008CBA; /*Blue  */
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <form>
+                <center><h1>LOGIN</h1></center>
+                <hr>
+                <br/>
+                
+                <div class="line"><label for="Username">Username  <span class="red"> * </span> : </label><input type="text" id="Username" /></div><br/>
+                <div class="line"><label for="Password">Password <span class="red"> * </span> :</label><input type="password" id="Password" /></div><br/>
+              
+                <br/>
+                <hr>
+ 
+                  <center> <div class="button"><input type="submit" value="LOGIN" /></div></center>
+            </form>
+        </div>
+    </body>
+</html>
 
