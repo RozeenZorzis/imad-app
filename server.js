@@ -65,6 +65,10 @@ app.get('/medicaldata', function (req, res) {
   res.sendFile(path.join(__dirname,'ui' , 'medicaldata.html'));
 });
 
+app.get('/login', function (req, res) {
+  res.sendFile(path.join(__dirname,'ui' , 'login.html'));
+});
+
 //app.get('/', function (req, res) {
 //res.sendFile(path.join(__dirname,'ui' , 'index.html'));
 //});
