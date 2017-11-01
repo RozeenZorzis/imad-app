@@ -61,9 +61,9 @@ app.get('/ui/reg', function (req, res) {
   res.sendFile(path.join(__dirname,'ui' , 'reg.html'));
 });
 
-//app.get('/ui/reg.html', function (req, res) {
-//  res.sendFile(path.join(__dirname,'ui' , 'reg.html'));
-//});
+app.get('/', function (req, res) {
+res.sendFile(path.join(__dirname,'ui' , 'index.html'));
+});
 
 function hash(input,salt){
     //how do we get a hash
